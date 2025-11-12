@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agente de IA para tradução entre Linguagem Natural e Cálculo Proposicional Clássico">
+    <meta name="author" content="Seu Nome - Trabalho de IA">
+    <title>Tradutor NL ↔ CPC - Agente de IA</title>
+    
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Folhas de Estilo -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Container de Partículas Animadas -->
+    <div id="particles-container"></div>
+
+    <!-- Container Principal -->
+    <div class="container">
+        
+        <!-- Cabeçalho -->
+        <header class="header">
+            <h1><span class="emoji">🧠</span> Tradutor NL ↔ CPC</h1>
+            <p>Agente de IA para tradução entre Linguagem Natural e Cálculo Proposicional Clássico</p>
+        </header>
+
+        <!-- Seletor de Modo -->
+        <section class="mode-selector">
+            <div class="mode-buttons">
+                <button id="mode-nl-to-cpc" class="mode-btn active" aria-label="Modo NL para CPC">
+                    <span>
+                        <span class="emoji-large">📝</span>
+                        NL → CPC
+                    </span>
+                </button>
+                <button id="mode-cpc-to-nl" class="mode-btn" aria-label="Modo CPC para NL">
+                    <span>
+                        <span class="emoji-large">🔤</span>
+                        CPC → NL
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Grade de Conteúdo Principal -->
+        <main class="content-grid">
+            
+            <!-- Card de Entrada -->
+            <article class="card">
+                <h2>
+                    <span class="icon">📥</span>
+                    <span id="input-title">Entrada (NL)</span>
+                </h2>
+                <textarea 
+                    id="input-text" 
+                    placeholder="Digite uma frase em português..."
+                    aria-label="Campo de entrada de texto"
+                ></textarea>
+                
+                <!-- Exemplos -->
+                <div class="examples">
+                    <div class="examples-label">
+                        <span>💡</span>
+                        <span>Exemplos:</span>
+                    </div>
+                    <div id="examples" class="examples-list"></div>
+                </div>
+            </article>
+
+            <!-- Card de Saída -->
+            <article class="card">
+                <h2>
+                    <span class="icon">📤</span>
+                    <span id="output-title">Saída (CPC)</span>
+                </h2>
+                <div id="output-text" class="output-box" aria-live="polite">
+                    <span class="placeholder">Resultado aparecerá aqui...</span>
+                </div>
+            </article>
+            
+        </main>
+
+        <!-- Seção de Proposições (Modo CPC → NL) -->
+        <section id="propositions-section" class="props-section hidden" aria-labelledby="props-title">
+            <div class="props-header">
+                <h2 id="props-title">🔧 Definir Proposições</h2>
+                <button id="add-prop-btn" class="add-btn" aria-label="Adicionar nova proposição">
+                    + Adicionar
+                </button>
+            </div>
+            <div id="propositions-list" role="list"></div>
+        </section>
+
+        <!-- Proposições Detectadas (Modo NL → CPC) -->
+        <section id="detected-props-section" class="props-section hidden" aria-labelledby="detected-title">
+            <h2 id="detected-title">🎯 Proposições Detectadas</h2>
+            <div id="detected-props-list" role="list"></div>
+        </section>
+
+        <!-- Botão de Tradução -->
+        <button id="translate-btn" class="translate-btn" aria-label="Executar tradução">
+            🚀 Traduzir
+        </button>
+
+        <!-- Análise de Resultado -->
+        <aside id="analysis-section" class="hidden" role="status" aria-live="polite"></aside>
+
+        <!-- Caixa de Informações -->
+        <section class="info-box" aria-labelledby="info-title">
+            <div class="info-content">
+                <div class="info-icon" aria-hidden="true">ℹ️</div>
+                <div class="info-text">
+                    <h3 id="info-title">Conectivos Suportados</h3>
+                    <div class="connectives-grid">
+                        <div class="connective-item">
+                            <span class="connective-symbol">∧</span> - e (conjunção)
+                        </div>
+                        <div class="connective-item">
+                            <span class="connective-symbol">∨</span> - ou (disjunção)
+                        </div>
+                        <div class="connective-item">
+                            <span class="connective-symbol">¬</span> - não (negação)
+                        </div>
+                        <div class="connective-item">
+                            <span class="connective-symbol">→</span> - então (implicação)
+                        </div>
+                        <div class="connective-item">
+                            <span class="connective-symbol">↔</span> - se e somente se (bicondicional)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts JavaScript -->
+    <script src="js/config.js"></script>
+    <script src="js/translator.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>

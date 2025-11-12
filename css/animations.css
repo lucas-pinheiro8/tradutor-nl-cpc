@@ -1,0 +1,107 @@
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0) translateX(0) rotate(0deg); 
+        opacity: 0; 
+    }
+    25% { 
+        opacity: 0.3; 
+    }
+    50% { 
+        transform: translateY(-100px) translateX(50px) rotate(180deg); 
+        opacity: 0.5; 
+    }
+    75% { 
+        opacity: 0.3; 
+    }
+}
+
+/* Animação de Brilho no Header */
+@keyframes shine {
+    0% { 
+        transform: translateX(-100%) translateY(-100%) rotate(45deg); 
+    }
+    100% { 
+        transform: translateX(100%) translateY(100%) rotate(45deg); 
+    }
+}
+
+/* Animação de Slide Down (Header) */
+@keyframes slideDown {
+    from { 
+        opacity: 0; 
+        transform: translateY(-50px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* Animação de Fade In com Scale */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: scale(0.95); 
+    }
+    to { 
+        opacity: 1; 
+        transform: scale(1); 
+    }
+}
+
+/* Animação de Bounce (Emoji do Header) */
+@keyframes bounce {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-10px); 
+    }
+}
+
+/* Animação de Slide In (Proposições) */
+@keyframes slideIn {
+    from { 
+        opacity: 0; 
+        transform: translateX(-30px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
+
+/* Animação de Slide Up (Análise) */
+@keyframes slideUp {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* Animação de Pop (Ícones de Análise) */
+@keyframes pop {
+    0% { 
+        transform: scale(0); 
+    }
+    50% { 
+        transform: scale(1.2); 
+    }
+    100% { 
+        transform: scale(1); 
+    }
+}
+
+/* Animação de Pulse (Ícone de Info) */
+@keyframes pulse {
+    0%, 100% { 
+        transform: scale(1); 
+    }
+    50% { 
+        transform: scale(1.1); 
+    }
+}

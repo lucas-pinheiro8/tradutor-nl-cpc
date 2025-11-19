@@ -1,14 +1,16 @@
 # 🧠 Tradutor NL ↔ CPC - Agente de IA
 
 Sistema inteligente para tradução bidirecional entre Linguagem Natural (português) e Cálculo Proposicional Clássico.<br>
-Autores: <br>
+
+## Autores: <br>
 Lucas Pinheiro Coelho Cacere<br>
 Guilherme Modesto Saturi<br>
 Yasmin Gurgel Batista <br>
 João Pedro Gomes Gonçalves<br>
 
 ## Link do Vídeo de Demonstração
-[Vídeo de Demonstração](https://drive.google.com/file/d/1sncEqDFtQNmQF6ldUc8zr8pR1ljpy9Ux/view?usp=drive_link)
+[Vídeo de Demonstração do Tradutor NL <--> CPC](https://drive.google.com/file/d/1sncEqDFtQNmQF6ldUc8zr8pR1ljpy9Ux/view?usp=drive_link)
+
 ## Visão Geral
 
 Este projeto implementa um **Agente de IA** capaz de realizar traduções bidirecionais entre:

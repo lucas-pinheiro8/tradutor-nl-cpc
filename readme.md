@@ -7,8 +7,9 @@ Guilherme Modesto Saturi<br>
 Yasmin Gurgel Batista <br>
 João Pedro Gomes Gonçalves<br>
 
-
-## 🎯 Visão Geral
+## Link do Vídeo de Demonstração
+[Vídeo de Demonstração](https://drive.google.com/file/d/1sncEqDFtQNmQF6ldUc8zr8pR1ljpy9Ux/view?usp=drive_link)
+## Visão Geral
 
 Este projeto implementa um **Agente de IA** capaz de realizar traduções bidirecionais entre:
 
